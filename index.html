@@ -9,36 +9,37 @@
     <title>Warehouse Audit &amp; Distribution Operations Consulting, Vancouver, Canada | Econova Global Solutions</title>
     <style>
       :root {
-        --bg: #f4f6f8;
+        --bg: #f6f4ee;
         --surface: #ffffff;
-        --ink: #1d2b3a;
-        --ink-soft: #4c5d6e;
-        --line: #d9dfe6;
-        --forest: #1e4a7c;
-        --forest-deep: #122a45;
-        --leaf: #4a719e;
+        --ink: #22312a;
+        --ink-soft: #54645b;
+        --line: #dde2d8;
+        --forest: #1d5c38;
+        --forest-deep: #0e2e1e;
+        --leaf: #4da167;
         --kraft: #e2720d;
-        --kraft-soft: #fdeee1;
-        --on-forest: #eef3f8;
-        --on-forest-soft: #b7c7d8;
-        --shadow: 0 10px 30px rgba(20, 40, 60, 0.10);
+        --kraft-soft: #fdeedd;
+        --on-forest: #edf4ee;
+        --on-forest-soft: #bcd2c2;
+        --shadow: 0 10px 30px rgba(14, 40, 26, 0.10);
       }
       @media (prefers-color-scheme: dark) {
         :root {
-          --bg: #0e141b;
-          --surface: #17222d;
-          --ink: #e8eef4;
-          --ink-soft: #a3b2c1;
-          --line: #2c3a48;
-          --forest: #5486bd;
-          --forest-deep: #0a1826;
-          --leaf: #84a9d2;
+          --bg: #0c130e;
+          --surface: #16211a;
+          --ink: #e8f0e9;
+          --ink-soft: #a7b8ab;
+          --line: #2a3a2f;
+          --forest: #6cc48d;
+          --forest-deep: #071a10;
+          --leaf: #8fd3a6;
           --kraft: #f59a45;
           --kraft-soft: #38261a;
-          --on-forest: #eef3f8;
-          --on-forest-soft: #b7c7d8;
+          --on-forest: #eaf5ec;
+          --on-forest-soft: #aecbb6;
           --shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
         }
+        .btn-dark { background: #2e7d4f; }
       }
 
       * { box-sizing: border-box; }
@@ -69,6 +70,7 @@
         background: var(--forest-deep);
         color: var(--on-forest);
         border-bottom: 1px solid rgba(238,243,248,0.15);
+        box-shadow: 0 2px 16px rgba(6, 25, 15, 0.28);
       }
       .site-header .wrap {
         display: flex; align-items: center; gap: 20px;
@@ -100,9 +102,11 @@
       /* ---------- Views ---------- */
       .view { display: none; }
       .view.active { display: block; }
-      section { padding: 60px 0; }
-      .section-head { max-width: 42em; margin-bottom: 34px; }
-      .section-head h2 { font-size: clamp(27px, 3.4vw, 36px); }
+      section { padding: 68px 0; }
+      .section-head { max-width: 42em; margin-bottom: 38px; }
+      .section-head h2 { font-size: clamp(28px, 3.4vw, 37px); }
+      .section-head h2::after { content: ""; display: block; width: 54px; height: 3px; border-radius: 2px; background: var(--leaf); margin-top: 14px; }
+      .framework .section-head h2::after { background: var(--kraft); }
       .section-head p { margin-top: 12px; color: var(--ink-soft); font-size: 17.5px; }
       .crumb { font-size: 13.5px; color: var(--ink-soft); margin-bottom: 14px; }
       .crumb a { color: var(--forest); text-decoration: none; font-weight: 600; }
@@ -111,7 +115,7 @@
       .btn {
         display: inline-block;
         padding: 13px 24px;
-        border-radius: 6px;
+        border-radius: 10px;
         font-weight: 600;
         font-size: 16px;
         text-decoration: none;
@@ -120,21 +124,21 @@
         transition: transform 0.15s ease, background 0.15s ease;
       }
       .btn:hover { transform: translateY(-1px); }
-      .btn-primary { background: var(--kraft); color: #152635; }
+      .btn-primary { background: var(--kraft); color: #152635; box-shadow: 0 10px 22px -8px rgba(226, 114, 13, 0.55); }
       .btn-ghost { border: 1px solid rgba(238, 243, 248, 0.45); color: var(--on-forest); }
       .btn-dark { background: var(--forest); color: var(--on-forest); }
       .btn-outline { border: 1px solid var(--forest); color: var(--forest); background: transparent; }
 
       /* ---------- Hero ---------- */
-      .hero { background: var(--forest-deep); color: var(--on-forest); position: relative; overflow: hidden; }
+      .hero { background: linear-gradient(155deg, #1a4a30 0%, var(--forest-deep) 58%, #081f13 100%); color: var(--on-forest); position: relative; overflow: hidden; }
       .hero-inner {
         display: grid; grid-template-columns: 1fr;
         gap: 38px; align-items: center;
-        padding-top: 40px; padding-bottom: 52px;
+        padding-top: 48px; padding-bottom: 60px;
       }
       .hero-copy { max-width: 48em; }
-      .hero h1 { font-size: clamp(33px, 5vw, 50px); letter-spacing: -0.01em; }
-      .hero h1 em { font-style: italic; color: #9dbfdd; }
+      .hero h1 { font-size: clamp(36px, 5.4vw, 54px); letter-spacing: -0.01em; }
+      .hero h1 em { font-style: italic; color: #a9dcba; }
       .hero .lede { margin-top: 20px; font-size: 18.5px; color: var(--on-forest-soft); max-width: 34em; }
       .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
       .hero-meta {
@@ -161,39 +165,67 @@
       .photo-figure figcaption b { color: var(--ink); }
 
       /* Page hero (interior pages) */
-      .page-hero { background: var(--forest-deep); color: var(--on-forest); }
+      .page-hero { background: linear-gradient(150deg, #17452c 0%, var(--forest-deep) 62%, #081f13 100%); color: var(--on-forest); }
       .page-hero .wrap { padding-top: 46px; padding-bottom: 42px; }
       .page-hero h1 { font-size: clamp(30px, 4.4vw, 44px); max-width: 20em; }
-      .page-hero h1 em { font-style: italic; color: #9dbfdd; }
+      .page-hero h1 em { font-style: italic; color: #a9dcba; }
       .page-hero .lede { margin-top: 16px; font-size: 18px; color: var(--on-forest-soft); max-width: 38em; }
       .page-hero .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
 
       /* ---------- Page banner (wide visual at the top of a page) ---------- */
       .page-banner {
-        margin: 30px 0 0; border-radius: 10px; overflow: hidden;
-        box-shadow: 0 24px 50px rgba(0, 0, 0, 0.35);
+        margin: 30px 0 0; border-radius: 16px; overflow: hidden; position: relative;
+        border: 1px solid rgba(20, 45, 32, 0.14);
+        box-shadow: 0 28px 56px -18px rgba(10, 35, 22, 0.45);
       }
       .page-banner img { width: 100%; height: auto; aspect-ratio: 21 / 9; object-fit: cover; }
       .hero-banner { margin-top: 0; }
+      .page-banner video {
+        position: absolute; inset: 0; width: 100%; height: 100%;
+        object-fit: cover; display: block;
+      }
+      @media (prefers-reduced-motion: reduce) { .page-banner video { display: none; } }
+
+      /* ---------- Photo strip (home) ---------- */
+      .photo-strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+      .photo-strip figure { margin: 0; border-radius: 14px; overflow: hidden; border: 1px solid var(--line); box-shadow: var(--shadow); }
+      .photo-strip img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
+      @media (max-width: 860px) { .photo-strip { grid-template-columns: repeat(2, 1fr); } }
+
+      /* ---------- Story figures ---------- */
+      .story-figure img { aspect-ratio: 16 / 9; object-fit: cover; }
 
       /* ---------- Challenge tiles ---------- */
       .tiles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
       .tile {
-        background: var(--surface); border: 1px solid var(--line); border-radius: 10px;
+        background: var(--surface); border: 1px solid var(--line); border-radius: 14px;
         padding: 26px 24px; box-shadow: var(--shadow);
         text-decoration: none; color: var(--ink); display: block;
+        transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
       }
-      .tile:hover { border-color: var(--leaf); }
+      .tile:hover { border-color: var(--leaf); transform: translateY(-3px); box-shadow: 0 18px 36px -14px rgba(14, 40, 26, 0.28); }
       .tile h3 { font-size: 20px; margin-bottom: 8px; }
       .tile p { color: var(--ink-soft); font-size: 15.5px; }
       .tile .go { display: inline-block; margin-top: 14px; font-size: 14.5px; font-weight: 700; color: var(--forest); }
 
       /* ---------- Framework band ---------- */
-      .framework { background: var(--forest-deep); color: var(--on-forest); }
+      .framework { background: linear-gradient(160deg, #17452c 0%, var(--forest-deep) 62%, #081f13 100%); color: var(--on-forest); }
       .framework h2 { color: var(--on-forest); }
       .framework .section-head p { color: var(--on-forest-soft); }
       .approach { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-      .step { border-top: 3px solid var(--kraft); padding-top: 16px; }
+      .step {
+        border-top: 3px solid var(--kraft); padding: 20px 20px 22px;
+        background: rgba(255, 255, 255, 0.05);
+        border-left: 1px solid rgba(255, 255, 255, 0.10);
+        border-right: 1px solid rgba(255, 255, 255, 0.10);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+        border-radius: 12px;
+      }
+      .step.on-light {
+        background: var(--surface);
+        border-left-color: var(--line); border-right-color: var(--line); border-bottom-color: var(--line);
+        box-shadow: var(--shadow);
+      }
       .step .num { font-family: Georgia, serif; font-style: italic; color: var(--kraft); font-size: 15px; }
       .step h3 { font-size: 20px; margin: 8px 0 10px; }
       .step p { font-size: 16px; }
@@ -208,9 +240,13 @@
       .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
       .cards.two { grid-template-columns: repeat(2, 1fr); }
       .card {
-        background: var(--surface); border: 1px solid var(--line); border-radius: 10px;
+        background: var(--surface); border: 1px solid var(--line); border-radius: 14px;
         padding: 28px 26px; box-shadow: var(--shadow);
+        transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
       }
+      .card:hover { transform: translateY(-3px); border-color: var(--leaf); box-shadow: 0 18px 36px -14px rgba(14, 40, 26, 0.28); }
+      .card-thumb { margin: -28px -26px 20px; }
+      .card-thumb img { width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; }
       .card .num { font-family: Georgia, serif; font-style: italic; color: var(--kraft); font-size: 15px; }
       .card .tag {
         float: right; font-size: 12px; font-weight: 700; letter-spacing: 0.06em;
@@ -371,7 +407,7 @@
       .check-result .btn { margin-top: 16px; }
 
       /* ---------- Contact ---------- */
-      .contact-band { background: var(--forest-deep); color: var(--on-forest); }
+      .contact-band { background: linear-gradient(160deg, #17452c 0%, var(--forest-deep) 62%, #081f13 100%); color: var(--on-forest); }
       .contact-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 44px; align-items: start; }
       .contact-band h2 { font-size: clamp(27px, 3.4vw, 36px); }
       .contact-band .intro { margin-top: 14px; color: var(--on-forest-soft); max-width: 32em; }
@@ -461,6 +497,7 @@
         .hero-actions .btn, .contact-actions .btn { text-align: center; }
         .hero-meta { margin-top: 24px; gap: 6px 18px; font-size: 13.5px; }
         .tile, .card, .report-card { padding: 22px 20px; }
+        .card-thumb { margin: -22px -20px 18px; }
         .tile h3, .card h3 { font-size: 19px; }
         .steps-ol li { padding-left: 50px; }
         .prose p, .two-col .body { font-size: 16px; }
@@ -525,6 +562,9 @@
         <div class="wrap hero-inner">
           <figure class="page-banner hero-banner">
             <img src="assets/hero-warehouse.webp" alt="Interior of a modern distribution centre, tall racking, stocked shelves and a forklift moving a pallet of cartons down the central aisle" width="2352" height="1008" />
+            <video autoplay muted loop playsinline preload="metadata" poster="assets/hero-warehouse.webp" aria-hidden="true">
+              <source src="assets/hero-video.mp4" type="video/mp4" />
+            </video>
           </figure>
           <div class="hero-copy">
             <h1>Warehousing and distribution, <em>designed and implemented</em>, not just advised on.</h1>
@@ -734,6 +774,17 @@
               <li>Iran</li>
               <li>Afghanistan</li>
             </ul>
+          </div>
+        </div>
+      </section>
+
+      <section style="padding-top:0;">
+        <div class="wrap">
+          <div class="photo-strip">
+            <figure><img src="assets/stock-forklift-hall.webp" alt="Two forklifts inside a large warehouse hall" width="1600" height="1065" loading="lazy" /></figure>
+            <figure><img src="assets/stock-aisle-ops.webp" alt="High angle view of workers moving cartons with a pallet jack in a warehouse aisle" width="1600" height="1067" loading="lazy" /></figure>
+            <figure><img src="assets/stock-container-port.webp" alt="Top down aerial view of a container terminal with rows of colourful shipping containers" width="1600" height="899" loading="lazy" /></figure>
+            <figure><img src="assets/stock-aisle-talk.webp" alt="Two warehouse workers talking in an aisle between tall racking" width="1600" height="1067" loading="lazy" /></figure>
           </div>
         </div>
       </section>
@@ -1009,6 +1060,7 @@
         <div class="wrap">
           <div class="cards">
             <article class="card">
+              <div class="card-thumb"><img src="assets/stock-forklift-hall.webp" alt="Two forklifts inside a large warehouse hall" width="1600" height="1065" loading="lazy" /></div>
               <div class="num">01</div>
               <h3><a href="#/service/design">Warehouse &amp; Distribution Network Design</a></h3>
               <p>Design and setup for 3PL, e-commerce fulfilment and last mile operations, warehouses and distribution networks, including launch roadmaps and project planning.</p>
@@ -1021,6 +1073,7 @@
               <a class="more" href="#/service/design">Service details →</a>
             </article>
             <article class="card">
+              <div class="card-thumb"><img src="assets/audit-aisle.webp" alt="A consultant holding a tablet in a warehouse aisle between tall pallet racking" width="2352" height="1008" loading="lazy" /></div>
               <span class="tag">Flagship</span>
               <div class="num">02</div>
               <h3><a href="#/service/audit">Warehouse Operations Audit &amp; Efficiency Monitoring</a></h3>
@@ -1034,6 +1087,7 @@
               <a class="more" href="#/audit">The audit page →</a>
             </article>
             <article class="card">
+              <div class="card-thumb"><img src="assets/stock-barcode-scan.webp" alt="A warehouse worker scanning stock with a handheld barcode scanner while holding a tablet" width="1600" height="1067" loading="lazy" /></div>
               <div class="num">03</div>
               <h3><a href="#/service/wms">WMS Selection &amp; Implementation</a></h3>
               <p>Vendor-neutral selection and implementation, plus a post-implementation audit: did your WMS project deliver what was promised?</p>
@@ -1045,6 +1099,7 @@
               <a class="more" href="#/service/wms">Service details →</a>
             </article>
             <article class="card">
+              <div class="card-thumb"><img src="assets/stock-packing-bench.webp" alt="Two workers packing cartons at a packing bench in a small fulfilment room" width="1600" height="2400" loading="lazy" /></div>
               <div class="num">04</div>
               <h3><a href="#/service/packaging">End-of-Line Packaging Optimization</a></h3>
               <p>Packing methods, materials and right-sizing engineered for throughput, protection and cost per order, with BC extended producer responsibility (EPR) in view.</p>
@@ -1056,6 +1111,7 @@
               <a class="more" href="#/service/packaging">Service details →</a>
             </article>
             <article class="card">
+              <div class="card-thumb"><img src="assets/stock-scanner-tablet.webp" alt="A warehouse worker holding a tablet and a barcode scanner in front of racking" width="1600" height="1067" loading="lazy" /></div>
               <div class="num">05</div>
               <h3><a href="#/service/inventory">Inventory Control &amp; Replenishment Systems</a></h3>
               <p>Ordering and reorder-point systems built from real demand. Availability holds without capital sitting in overstock.</p>
@@ -1067,6 +1123,7 @@
               <a class="more" href="#/service/inventory">Service details →</a>
             </article>
             <article class="card">
+              <div class="card-thumb"><img src="assets/monitoring-dashboard.webp" alt="A control room with KPI dashboard screens on the wall, overlooking a warehouse floor through glass" width="2352" height="1008" loading="lazy" /></div>
               <div class="num">06</div>
               <h3><a href="#/service/monitoring">Performance Monitoring &amp; Process Auditing</a></h3>
               <p>The recurring service every audit leads to: periodic re-audit, KPI reporting and per-unit efficiency tracking on a retainer.</p>
@@ -1159,6 +1216,9 @@
             <a class="btn btn-primary" href="#/contact">Discuss a design project</a>
             <a class="btn btn-ghost" href="#/audit">Start with a free audit instead</a>
           </div>
+          <figure class="page-banner">
+            <img src="assets/stock-aerial-dc.webp" alt="Aerial view of a logistics centre, trucks docked along the warehouse and trailers parked in the yard" width="1600" height="1066" loading="lazy" />
+          </figure>
         </div>
       </header>
       <section>
@@ -1227,6 +1287,9 @@
             <a class="btn btn-primary" href="#/contact">Discuss a packaging review</a>
             <a class="btn btn-ghost" href="#/audit">Include it in an audit</a>
           </div>
+          <figure class="page-banner">
+            <img src="assets/stock-packing-line.webp" alt="A forklift placing a pallet of canned drinks at a roller conveyor in a beverage warehouse" width="1600" height="1067" loading="lazy" />
+          </figure>
         </div>
       </header>
       <section>
@@ -1291,6 +1354,9 @@
             <a class="btn btn-primary" href="#/contact">Discuss inventory control</a>
             <a class="btn btn-ghost" href="#/library/kpi-glossary">What the KPIs mean</a>
           </div>
+          <figure class="page-banner">
+            <img src="assets/stock-barcode-scan.webp" alt="A warehouse worker scanning stock with a handheld barcode scanner while holding a tablet" width="1600" height="1067" loading="lazy" />
+          </figure>
         </div>
       </header>
       <section>
@@ -1423,6 +1489,9 @@
         <div class="wrap">
           <h1>How we work</h1>
           <p class="lede">Consulting plus execution, in three layers. Most firms hand you one layer, a design, or an implementation, or a dashboard. The model here is built so the solution is designed, then implemented, then held to account, and you can enter at any layer.</p>
+          <figure class="page-banner">
+            <img src="assets/stock-team-floor.webp" alt="Two workers reviewing a tablet while walking an open warehouse floor" width="1600" height="1067" loading="lazy" />
+          </figure>
         </div>
       </header>
       <section>
@@ -1490,21 +1559,25 @@
         <div class="wrap">
           <div class="cards two">
             <article class="card">
+              <div class="card-thumb"><img src="assets/stock-food-forklift.webp" alt="A forklift carrying cases of drinks across a warehouse loading dock" width="1600" height="1067" loading="lazy" /></div>
               <h3><a href="#/industry/food-beverage">Food &amp; Beverage Distribution</a></h3>
               <p>Cold chain discipline, lot and expiry control, and foodservice distribution into the HoReCa channel, where a missed OTIF window is a lost listing.</p>
               <a class="more" href="#/industry/food-beverage">Sector page →</a>
             </article>
             <article class="card">
+              <div class="card-thumb"><img src="assets/stock-picking-shelves.webp" alt="A worker picking parcels from shelves in a fulfilment centre" width="1600" height="2400" loading="lazy" /></div>
               <h3><a href="#/industry/ecommerce">E-commerce &amp; Online Retail Fulfilment</a></h3>
               <p>Peak-shaped demand, single-item picks, returns through reverse logistics, and a pack bench that decides your delivery promise.</p>
               <a class="more" href="#/industry/ecommerce">Sector page →</a>
             </article>
             <article class="card">
+              <div class="card-thumb"><img src="assets/stock-van-loading.webp" alt="Two workers loading cartons into the back of a delivery van" width="1600" height="1067" loading="lazy" /></div>
               <h3><a href="#/industry/3pl">3PL &amp; Warehousing</a></h3>
               <p>Multi-client operations where per-unit efficiency per client is the margin, and where your clients audit you.</p>
               <a class="more" href="#/industry/3pl">Sector page →</a>
             </article>
             <article class="card">
+              <div class="card-thumb"><img src="assets/stock-building-yard.webp" alt="A forklift loading wrapped building blocks onto a flatbed truck in an outdoor yard" width="1600" height="1115" loading="lazy" /></div>
               <h3><a href="#/industry/building-products">Building Products &amp; General Distribution</a></h3>
               <p>Bulky, heavy, damage-prone stock; yard and warehouse in one flow; DSD and jobsite delivery windows.</p>
               <a class="more" href="#/industry/building-products">Sector page →</a>
@@ -1521,6 +1594,9 @@
           <p class="crumb" style="color:var(--on-forest-soft);"><a href="#/industries" style="color:#f5a55c;">Industries</a> · Food &amp; Beverage Distribution</p>
           <h1>Food &amp; Beverage <em>Distribution</em></h1>
           <p class="lede">This sector runs on rules before it runs on trucks: temperature control, traceability and shelf life, and customers, from grocery retail to the HoReCa channel, who measure you on OTIF.</p>
+          <figure class="page-banner">
+            <img src="assets/stock-food-forklift.webp" alt="A forklift carrying cases of drinks across a warehouse loading dock" width="1600" height="1067" loading="lazy" />
+          </figure>
         </div>
       </header>
       <section>
@@ -1570,6 +1646,9 @@
           <p class="crumb" style="color:var(--on-forest-soft);"><a href="#/industries" style="color:#f5a55c;">Industries</a> · E-commerce &amp; Online Retail Fulfilment</p>
           <h1>E-commerce &amp; <em>Online Retail Fulfilment</em></h1>
           <p class="lede">Online retail asks a warehouse to be two things at once: a bulk store and a piece-picking line shipping against a same-day promise. Peak decides whether the design works.</p>
+          <figure class="page-banner">
+            <img src="assets/stock-parcel-labels.webp" alt="Hands holding a small cardboard parcel with shipping and barcode labels" width="1600" height="1068" loading="lazy" />
+          </figure>
         </div>
       </header>
       <section>
@@ -1621,6 +1700,9 @@
           <p class="crumb" style="color:var(--on-forest-soft);"><a href="#/industries" style="color:#f5a55c;">Industries</a> · 3PL &amp; Warehousing</p>
           <h1>3PL &amp; <em>Warehousing</em></h1>
           <p class="lede">A 3PL sells the same shelf ten different ways. The operators who keep margin are the ones who know their per-unit efficiency per client, and can prove their service levels when a client audits them.</p>
+          <figure class="page-banner">
+            <img src="assets/stock-loading-dock.webp" alt="The rear of a white freight trailer at a distribution facility gate at dusk" width="1600" height="1067" loading="lazy" />
+          </figure>
         </div>
       </header>
       <section>
@@ -1673,6 +1755,9 @@
           <p class="crumb" style="color:var(--on-forest-soft);"><a href="#/industries" style="color:#f5a55c;">Industries</a> · Building Products &amp; General Distribution</p>
           <h1>Building Products &amp; <em>General Distribution</em></h1>
           <p class="lede">Long, heavy, fragile and weather-exposed. Building products break the assumptions of a standard warehouse, and the delivery promise is a jobsite window, not a dock appointment.</p>
+          <figure class="page-banner">
+            <img src="assets/stock-building-yard.webp" alt="A forklift loading wrapped building blocks onto a flatbed truck in an outdoor yard" width="1600" height="1115" loading="lazy" />
+          </figure>
         </div>
       </header>
       <section>
@@ -1729,12 +1814,18 @@
           <p><b>The situation.</b> A retail distribution operation in Georgia needed a warehouse management system to run its distribution centre, selected on fit for the operation, implemented properly, and taken live in daily use.</p>
           <p><b>What was delivered.</b> Econova&rsquo;s team ran the engagement end to end: requirements from the live operation, vendor selection, implementation, and go-live of the WMS the distribution centre now runs on.</p>
           <p><b>Scope of work.</b> Process mapping of receiving, put-away, picking and dispatch; requirements definition; vendor shortlisting and selection; configuration and implementation support; go-live.</p>
+          <figure class="photo-figure story-figure">
+            <img src="assets/stock-walkthrough.webp" alt="Two warehouse workers reviewing a tablet beside a forklift in an aisle" width="1600" height="1067" loading="lazy" />
+          </figure>
           <div class="placeholder-note"><b>Results figures:</b> quantified outcomes from this engagement will be published here once verified against the project record. We don&rsquo;t publish numbers we can&rsquo;t stand behind. <span style="display:block;margin-top:4px;font-size:13.5px;">[Econova to supply: verified result figures for this story]</span></div>
 
           <h3 style="margin-top:44px;">Iran: Store network launch roadmap &amp; project planning</h3>
           <p><b>The situation.</b> A store network rollout needed more than an opening schedule: each new store depended on distribution support, stock build and operational readiness landing in the right order.</p>
           <p><b>What was delivered.</b> Econova&rsquo;s team produced the launch roadmap and project plan for the rollout, the sequencing, distribution support and operational plan behind each opening.</p>
           <p><b>Scope of work.</b> Rollout sequencing and project planning; distribution and replenishment support design for new stores; operational readiness planning per opening.</p>
+          <figure class="photo-figure story-figure">
+            <img src="assets/stock-fleet-aerial.webp" alt="Aerial view of rows of new truck cabs parked in a distribution yard" width="1600" height="1065" loading="lazy" />
+          </figure>
           <div class="placeholder-note"><b>Results figures:</b> quantified outcomes from this engagement will be published here once verified against the project record. <span style="display:block;margin-top:4px;font-size:13.5px;">[Econova to supply: verified result figures for this story]</span></div>
 
           <p style="margin-top:36px;">More stories, from engagements in Germany, France, Spain, Austria, Georgia, the UAE, Kuwait, Iraq, Turkey, Tajikistan, South Africa, Iran and Afghanistan, will be added in the same anonymized format as permissions and verified figures allow.</p>
@@ -1757,18 +1848,21 @@
         <div class="wrap">
           <div class="cards">
             <article class="card">
+              <div class="card-thumb"><img src="assets/stock-clipboard-check.webp" alt="A worker in a high visibility vest checking cartons against a clipboard" width="1600" height="1068" loading="lazy" /></div>
               <div class="num">Self-check · Checklist</div>
               <h3><a href="#/library/checklist">Do you need a warehouse audit?</a></h3>
               <p>Eight plain questions about your operation. Answer honestly. Three or more &ldquo;yes&rdquo; answers suggests an audit is likely to surface findings worth acting on.</p>
               <a class="more" href="#/library/checklist">Take the checklist →</a>
             </article>
             <article class="card">
+              <div class="card-thumb"><img src="assets/stock-dashboard-laptop.webp" alt="A laptop showing operations dashboards with charts and a world map" width="1600" height="1060" loading="lazy" /></div>
               <div class="num">Reference · Glossary</div>
               <h3><a href="#/library/kpi-glossary">Warehouse KPI glossary</a></h3>
               <p>OTIF, fill rate, dock-to-stock time, lines picked per hour, order cycle time, inventory accuracy, ROP, safety stock, defined in plain language, with what each one reveals.</p>
               <a class="more" href="#/library/kpi-glossary">Open the glossary →</a>
             </article>
             <article class="card">
+              <div class="card-thumb"><img src="assets/stock-barcode-scan.webp" alt="A warehouse worker scanning stock with a handheld barcode scanner while holding a tablet" width="1600" height="1067" loading="lazy" /></div>
               <div class="num">Guide</div>
               <h3><a href="#/library/wms-guide">WMS readiness guide</a></h3>
               <p>What to settle before selecting a warehouse management system: processes, data and requirements, and the selection mistakes that cost the most.</p>
@@ -1789,6 +1883,9 @@
           <p class="crumb" style="color:var(--on-forest-soft);"><a href="#/library" style="color:#f5a55c;">Library</a> · Self-check</p>
           <h1>Do you need a <em>warehouse audit?</em></h1>
           <p class="lede">Eight questions. Answer for your operation as it runs today, not as the procedure manual describes it. Three or more &ldquo;yes&rdquo; answers and an audit is likely to surface findings worth acting on.</p>
+          <figure class="page-banner">
+            <img src="assets/stock-clipboard-check.webp" alt="A worker in a high visibility vest checking cartons against a clipboard" width="1600" height="1068" loading="lazy" />
+          </figure>
         </div>
       </header>
       <section>
@@ -1844,6 +1941,9 @@
           <p class="crumb" style="color:var(--on-forest-soft);"><a href="#/library" style="color:#f5a55c;">Library</a> · Reference</p>
           <h1>Warehouse KPI <em>glossary</em></h1>
           <p class="lede">The vocabulary of the audit and the monitoring retainer, every term defined in plain language, with what it reveals about an operation.</p>
+          <figure class="page-banner">
+            <img src="assets/stock-dashboard-laptop.webp" alt="A laptop showing operations dashboards with charts and a world map" width="1600" height="1060" loading="lazy" />
+          </figure>
         </div>
       </header>
       <section>
@@ -1913,6 +2013,9 @@
           <p class="crumb" style="color:var(--on-forest-soft);"><a href="#/library" style="color:#f5a55c;">Library</a> · Guide</p>
           <h1>WMS readiness <em>guide</em></h1>
           <p class="lede">A warehouse management system amplifies whatever it finds. This guide is what to settle before selection, so the system lands on sound processes, clean data and requirements you chose, not a vendor&rsquo;s template.</p>
+          <figure class="page-banner">
+            <img src="assets/stock-scanner-tablet.webp" alt="A warehouse worker holding a tablet and a barcode scanner in front of racking" width="1600" height="1067" loading="lazy" />
+          </figure>
         </div>
       </header>
       <section>
