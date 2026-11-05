@@ -1,0 +1,834 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="description" content="Warehouse audits and layout design for building products and general distribution: yard and warehouse as one flow, DSD and branch replenishment, inventory control for slow-moving, high-value lines." />
+    <link rel="icon" type="image/png" href="/assets/favicon.png" />
+    <link rel="canonical" href="https://econovaglobal.ca/industry/building-products/" />
+    <title>Building Products & General Distribution Consulting | Econova Global Solutions</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Econova Global Solutions" />
+    <meta property="og:title" content="Building Products & General Distribution Consulting | Econova Global Solutions" />
+    <meta property="og:description" content="Warehouse audits and layout design for building products and general distribution: yard and warehouse as one flow, DSD and branch replenishment, inventory control for slow-moving, high-value lines." />
+    <meta property="og:url" content="https://econovaglobal.ca/industry/building-products/" />
+    <meta property="og:image" content="https://econovaglobal.ca/assets/hero-warehouse.webp" />
+    <meta property="og:locale" content="en_CA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Building Products & General Distribution Consulting | Econova Global Solutions" />
+    <meta name="twitter:description" content="Warehouse audits and layout design for building products and general distribution: yard and warehouse as one flow, DSD and branch replenishment, inventory control for slow-moving, high-value lines." />
+    <meta name="twitter:image" content="https://econovaglobal.ca/assets/hero-warehouse.webp" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Econova Global Solutions",
+      "url": "https://econovaglobal.ca/",
+      "description": "Econova Global Solutions: 3PL, e-commerce fulfilment and last mile operations consulting, warehouse audit, distribution operations consulting, warehouse layout and flow optimization, inventory accuracy, WMS selection and KPI monitoring. Supply chain consulting based in Vancouver, BC, working with operations across Canada, first mile to last mile.",
+      "email": "info@econovaglobal.ca",
+      "telephone": "+1-236-991-3727",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Vancouver",
+        "addressRegion": "BC",
+        "addressCountry": "CA"
+      },
+      "areaServed": "Canada",
+      "founder": {
+        "@type": "Person",
+        "name": "Shahab Eshghi"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Warehouse and distribution operations consulting services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Warehouse Operations Audit & Efficiency Monitoring"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Warehouse & Distribution Network Design"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "WMS Selection & Implementation"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "End-of-Line Packaging Optimization"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Inventory Control & Replenishment Systems"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Performance Monitoring & Process Auditing"
+            }
+          }
+        ]
+      }
+    }
+    </script>
+    <style>
+      :root {
+        --bg: #f6f4ee;
+        --surface: #ffffff;
+        --ink: #22312a;
+        --ink-soft: #54645b;
+        --line: #dde2d8;
+        --forest: #1d5c38;
+        --forest-deep: #0e2e1e;
+        --leaf: #4da167;
+        --kraft: #e2720d;
+        --kraft-soft: #fdeedd;
+        --on-forest: #edf4ee;
+        --on-forest-soft: #bcd2c2;
+        --shadow: 0 10px 30px rgba(14, 40, 26, 0.10);
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0c130e;
+          --surface: #16211a;
+          --ink: #e8f0e9;
+          --ink-soft: #a7b8ab;
+          --line: #2a3a2f;
+          --forest: #6cc48d;
+          --forest-deep: #071a10;
+          --leaf: #8fd3a6;
+          --kraft: #f59a45;
+          --kraft-soft: #38261a;
+          --on-forest: #eaf5ec;
+          --on-forest-soft: #aecbb6;
+          --shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+        .btn-dark { background: #2e7d4f; }
+      }
+
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+        font-size: 17px;
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+      }
+      h1, h2, h3 {
+        font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+        font-weight: 600;
+        line-height: 1.15;
+        margin: 0;
+      }
+      p { margin: 0; }
+      a { color: var(--forest); }
+      img { display: block; max-width: 100%; }
+      .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+
+      /* ---------- Site header / nav ---------- */
+      .site-header {
+        position: sticky; top: 0; z-index: 50;
+        background: var(--forest-deep);
+        color: var(--on-forest);
+        border-bottom: 1px solid rgba(238,243,248,0.15);
+        box-shadow: 0 2px 16px rgba(6, 25, 15, 0.28);
+      }
+      .site-header .wrap {
+        display: flex; align-items: center; gap: 20px;
+        padding-top: 10px; padding-bottom: 10px;
+      }
+      .brandmark { display: flex; align-items: center; text-decoration: none; flex: none; }
+      .brand-logo {
+        height: 46px; width: auto;
+        background: #ffffff; border-radius: 8px;
+        padding: 5px 10px;
+      }
+      .main-nav { display: flex; flex-wrap: wrap; gap: 2px 4px; margin-left: auto; align-items: center; }
+      .main-nav a {
+        color: var(--on-forest-soft);
+        text-decoration: none;
+        font-size: 14.5px; font-weight: 600;
+        padding: 7px 10px; border-radius: 6px;
+      }
+      .main-nav a:hover { color: var(--on-forest); background: rgba(255,255,255,0.08); }
+      .main-nav a.active { color: var(--on-forest); background: rgba(255,255,255,0.14); }
+      .header-cta {
+        flex: none;
+        background: var(--kraft); color: #152635 !important;
+        padding: 9px 16px !important; border-radius: 6px;
+        font-size: 14.5px;
+      }
+      .header-cta:hover { background: var(--kraft); }
+
+      /* ---------- Views ---------- */
+      .view { display: none; }
+      .view.active { display: block; }
+      section { padding: 68px 0; }
+      .section-head { max-width: 42em; margin-bottom: 38px; }
+      .section-head h2 { font-size: clamp(28px, 3.4vw, 37px); }
+      .section-head h2::after { content: ""; display: block; width: 54px; height: 3px; border-radius: 2px; background: var(--leaf); margin-top: 14px; }
+      .framework .section-head h2::after { background: var(--kraft); }
+      .section-head p { margin-top: 12px; color: var(--ink-soft); font-size: 17.5px; }
+      .crumb { font-size: 13.5px; color: var(--ink-soft); margin-bottom: 14px; }
+      .crumb a { color: var(--forest); text-decoration: none; font-weight: 600; }
+      .crumb a:hover { text-decoration: none; }
+
+      .btn {
+        display: inline-block;
+        padding: 13px 24px;
+        border-radius: 10px;
+        font-weight: 600;
+        font-size: 16px;
+        text-decoration: none;
+        border: none; cursor: pointer;
+        font-family: inherit;
+        transition: transform 0.15s ease, background 0.15s ease;
+      }
+      .btn:hover { transform: translateY(-1px); }
+      .btn-primary { background: var(--kraft); color: #152635; box-shadow: 0 10px 22px -8px rgba(226, 114, 13, 0.55); }
+      .btn-ghost { border: 1px solid rgba(238, 243, 248, 0.45); color: var(--on-forest); }
+      .btn-dark { background: var(--forest); color: var(--on-forest); }
+      .btn-outline { border: 1px solid var(--forest); color: var(--forest); background: transparent; }
+
+      /* ---------- Hero ---------- */
+      .hero { background: linear-gradient(155deg, #1a4a30 0%, var(--forest-deep) 58%, #081f13 100%); color: var(--on-forest); position: relative; overflow: hidden; }
+      .hero-inner {
+        display: grid; grid-template-columns: 1fr;
+        gap: 38px; align-items: center;
+        padding-top: 48px; padding-bottom: 60px;
+      }
+      .hero-copy { max-width: 48em; }
+      .hero h1 { font-size: clamp(36px, 5.4vw, 54px); letter-spacing: -0.01em; }
+      .hero h1 em { font-style: italic; color: #a9dcba; }
+      .hero .lede { margin-top: 20px; font-size: 18.5px; color: var(--on-forest-soft); max-width: 34em; }
+      .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+      .hero-meta {
+        margin-top: 32px; padding-top: 20px;
+        border-top: 1px solid rgba(238, 243, 248, 0.18);
+        display: flex; flex-wrap: wrap; gap: 8px 28px;
+        font-size: 14.5px; color: var(--on-forest-soft);
+      }
+      .hero-meta b { color: var(--on-forest); font-weight: 600; }
+      .hero-photo { border-radius: 10px; overflow: hidden; box-shadow: 0 24px 50px rgba(0, 0, 0, 0.35); }
+      .hero-photo img { width: 100%; height: 100%; object-fit: cover; aspect-ratio: 5 / 4.4; }
+
+      /* ---------- Real photos (founder / operations) ---------- */
+      .photo-figure {
+        margin: 22px 0 0; background: var(--surface);
+        border: 1px solid var(--line); border-radius: 10px;
+        overflow: hidden; box-shadow: var(--shadow);
+      }
+      .photo-figure img { width: 100%; height: auto; }
+      .photo-figure figcaption {
+        padding: 11px 16px 13px; font-size: 14.5px; line-height: 1.45;
+        color: var(--ink-soft); border-top: 1px solid var(--line);
+      }
+      .photo-figure figcaption b { color: var(--ink); }
+
+      /* Page hero (interior pages) */
+      .page-hero { background: linear-gradient(150deg, #17452c 0%, var(--forest-deep) 62%, #081f13 100%); color: var(--on-forest); }
+      .page-hero .wrap { padding-top: 46px; padding-bottom: 42px; }
+      .page-hero h1 { font-size: clamp(30px, 4.4vw, 44px); max-width: 20em; }
+      .page-hero h1 em { font-style: italic; color: #a9dcba; }
+      .page-hero .lede { margin-top: 16px; font-size: 18px; color: var(--on-forest-soft); max-width: 38em; }
+      .page-hero .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+
+      /* ---------- Page banner (wide visual at the top of a page) ---------- */
+      .page-banner {
+        margin: 30px 0 0; border-radius: 16px; overflow: hidden; position: relative;
+        border: 1px solid rgba(20, 45, 32, 0.14);
+        box-shadow: 0 28px 56px -18px rgba(10, 35, 22, 0.45);
+      }
+      .page-banner img { width: 100%; height: auto; aspect-ratio: 21 / 9; object-fit: cover; }
+      .hero-banner { margin-top: 0; }
+      .page-banner video {
+        position: absolute; inset: 0; width: 100%; height: 100%;
+        object-fit: cover; display: block;
+      }
+      @media (prefers-reduced-motion: reduce) { .page-banner video { display: none; } }
+
+      /* ---------- Photo strip (home) ---------- */
+      .photo-strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+      .photo-strip figure { margin: 0; border-radius: 14px; overflow: hidden; border: 1px solid var(--line); box-shadow: var(--shadow); }
+      .photo-strip img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
+      @media (max-width: 860px) { .photo-strip { grid-template-columns: repeat(2, 1fr); } }
+
+      /* ---------- Story figures ---------- */
+      .story-figure img { aspect-ratio: 16 / 9; object-fit: cover; }
+
+      /* ---------- Challenge tiles ---------- */
+      .tiles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+      .tile {
+        background: var(--surface); border: 1px solid var(--line); border-radius: 14px;
+        padding: 26px 24px; box-shadow: var(--shadow);
+        text-decoration: none; color: var(--ink); display: block;
+        transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+      }
+      .tile:hover { border-color: var(--leaf); transform: translateY(-3px); box-shadow: 0 18px 36px -14px rgba(14, 40, 26, 0.28); }
+      .tile h3 { font-size: 20px; margin-bottom: 8px; }
+      .tile p { color: var(--ink-soft); font-size: 15.5px; }
+      .tile .go { display: inline-block; margin-top: 14px; font-size: 14.5px; font-weight: 700; color: var(--forest); }
+
+      /* ---------- Framework band ---------- */
+      .framework { background: linear-gradient(160deg, #17452c 0%, var(--forest-deep) 62%, #081f13 100%); color: var(--on-forest); }
+      .framework h2 { color: var(--on-forest); }
+      .framework .section-head p { color: var(--on-forest-soft); }
+      .approach { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+      .step {
+        border-top: 3px solid var(--kraft); padding: 20px 20px 22px;
+        background: rgba(255, 255, 255, 0.05);
+        border-left: 1px solid rgba(255, 255, 255, 0.10);
+        border-right: 1px solid rgba(255, 255, 255, 0.10);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+        border-radius: 12px;
+      }
+      .step.on-light {
+        background: var(--surface);
+        border-left-color: var(--line); border-right-color: var(--line); border-bottom-color: var(--line);
+        box-shadow: var(--shadow);
+      }
+      .step .num { font-family: Georgia, serif; font-style: italic; color: var(--kraft); font-size: 15px; }
+      .step h3 { font-size: 20px; margin: 8px 0 10px; }
+      .step p { font-size: 16px; }
+      .framework .step p { color: var(--on-forest-soft); }
+      .step a { font-weight: 700; }
+      .framework .step a { color: #f5a55c; }
+      .step.on-light { border-top-color: var(--forest); }
+      .step.on-light p { color: var(--ink-soft); }
+      .step.on-light .num { color: var(--kraft); }
+
+      /* ---------- Cards (services / industries / library) ---------- */
+      .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+      .cards.two { grid-template-columns: repeat(2, 1fr); }
+      .card {
+        background: var(--surface); border: 1px solid var(--line); border-radius: 14px;
+        padding: 28px 26px; box-shadow: var(--shadow);
+        transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+      }
+      .card:hover { transform: translateY(-3px); border-color: var(--leaf); box-shadow: 0 18px 36px -14px rgba(14, 40, 26, 0.28); }
+      .card-thumb { margin: -28px -26px 20px; }
+      .card-thumb img { width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; }
+      .card .num { font-family: Georgia, serif; font-style: italic; color: var(--kraft); font-size: 15px; }
+      .card .tag {
+        float: right; font-size: 12px; font-weight: 700; letter-spacing: 0.06em;
+        text-transform: uppercase; color: var(--forest-deep);
+        background: var(--kraft-soft); border: 1px solid var(--line);
+        border-radius: 999px; padding: 3px 10px;
+      }
+      @media (prefers-color-scheme: dark) { .card .tag { color: var(--kraft); } }
+      .card h3 { font-size: 21px; margin: 8px 0 10px; }
+      .card h3 a { color: var(--ink); text-decoration: none; }
+      .card h3 a:hover { color: var(--forest); text-decoration: none; }
+      .card p { color: var(--ink-soft); font-size: 16px; }
+      .card ul { margin: 14px 0 0; padding: 0; list-style: none; }
+      .card li {
+        padding: 6px 0 6px 20px; position: relative;
+        font-size: 15.5px; color: var(--ink-soft);
+        border-top: 1px dashed var(--line);
+      }
+      .card li::before {
+        content: ""; position: absolute; left: 2px; top: 15px;
+        width: 7px; height: 7px; border-radius: 50%; background: var(--leaf);
+      }
+      .card .more { display: inline-block; margin-top: 16px; font-weight: 700; font-size: 15px; text-decoration: none; }
+      .card .more:hover { text-decoration: none; }
+
+      /* ---------- Lists ---------- */
+      .tick-list { margin: 18px 0 0; padding: 0; list-style: none; }
+      .tick-list li {
+        padding: 9px 0 9px 22px; position: relative; font-size: 16px;
+        border-top: 1px dashed var(--line);
+      }
+      .tick-list li:first-child { border-top: none; }
+      .tick-list li::before {
+        content: ""; position: absolute; left: 2px; top: 19px;
+        width: 7px; height: 7px; border-radius: 50%; background: var(--leaf);
+      }
+      .tick-list li b { font-weight: 600; }
+      .tick-list li span { color: var(--ink-soft); }
+
+      .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 44px; align-items: start; }
+      .two-col h2 { font-size: clamp(25px, 3vw, 32px); }
+      .two-col .body { margin-top: 12px; color: var(--ink-soft); font-size: 17px; }
+      .two-col .body + .body { margin-top: 12px; }
+      .two-col .body b { color: var(--ink); }
+      .prose p { color: var(--ink-soft); font-size: 17px; }
+      .prose p + p { margin-top: 14px; }
+      .prose p b, .prose li b { color: var(--ink); }
+      .prose h3 { font-size: 21px; margin: 30px 0 10px; color: var(--ink); }
+      .prose h3:first-child { margin-top: 0; }
+      .prose ul { margin: 10px 0 0; padding-left: 22px; color: var(--ink-soft); font-size: 16.5px; }
+      .prose ul li { margin-top: 6px; }
+
+      /* ---------- Audit page ---------- */
+      .audit-band { background: var(--kraft-soft); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+      .report-card {
+        background: var(--surface); border: 1px solid var(--line); border-radius: 10px;
+        padding: 28px 26px; box-shadow: var(--shadow);
+      }
+      .report-card .kicker {
+        font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase;
+        color: var(--kraft); font-weight: 700; margin-bottom: 8px;
+      }
+      .report-card h3 { font-size: 21px; margin-bottom: 10px; }
+      .report-card p { color: var(--ink-soft); font-size: 16px; }
+      .report-card p + p { margin-top: 10px; }
+      .credit-note {
+        margin-top: 18px; padding: 14px 16px;
+        border: 1px solid var(--line); border-radius: 8px; background: var(--bg);
+        font-size: 15.5px;
+      }
+      .credit-note b { color: var(--forest); }
+
+      .steps-ol { margin: 0; padding: 0; list-style: none; counter-reset: step; }
+      .steps-ol li {
+        counter-increment: step;
+        padding: 18px 0 18px 58px; position: relative;
+        border-top: 1px solid var(--line);
+      }
+      .steps-ol li:first-child { border-top: none; }
+      .steps-ol li::before {
+        content: counter(step);
+        position: absolute; left: 0; top: 16px;
+        width: 38px; height: 38px; border-radius: 50%;
+        background: var(--forest); color: var(--on-forest);
+        font-family: Georgia, serif; font-size: 17px;
+        display: flex; align-items: center; justify-content: center;
+      }
+      .steps-ol h3 { font-size: 19px; margin-bottom: 6px; }
+      .steps-ol p { color: var(--ink-soft); font-size: 16px; }
+
+      .tier-table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); box-shadow: var(--shadow); }
+      table.tiers { border-collapse: collapse; width: 100%; min-width: 560px; font-size: 15.5px; }
+      table.tiers th, table.tiers td { padding: 13px 16px; text-align: left; vertical-align: top; border-top: 1px solid var(--line); }
+      table.tiers thead th { border-top: none; background: var(--kraft-soft); font-family: Georgia, serif; font-size: 17px; }
+      table.tiers tbody th { font-weight: 600; color: var(--ink); width: 26%; }
+      table.tiers td { color: var(--ink-soft); width: 37%; }
+
+      /* ---------- FAQ ---------- */
+      .faq-list { display: grid; gap: 14px; }
+      details.faq {
+        background: var(--surface); border: 1px solid var(--line); border-radius: 10px;
+        padding: 18px 22px;
+      }
+      details.faq summary {
+        font-family: Georgia, serif; font-size: 18px; font-weight: 600;
+        cursor: pointer; list-style: none; color: var(--ink);
+      }
+      details.faq summary::-webkit-details-marker { display: none; }
+      details.faq summary::after { content: "+"; float: right; color: var(--kraft); font-size: 22px; line-height: 1; }
+      details.faq[open ] summary::after { content: "×"; }
+      details.faq p { margin-top: 10px; color: var(--ink-soft); font-size: 16px; }
+
+      /* ---------- Track record / countries ---------- */
+      .countries { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 0 24px; }
+      .countries li { padding: 10px 0; border-bottom: 1px solid var(--line); font-size: 16px; font-weight: 600; }
+      .countries li span { display: block; font-weight: 400; font-size: 14.5px; color: var(--ink-soft); }
+      .countries-head {
+        font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase;
+        color: var(--kraft); font-weight: 700; margin-bottom: 6px;
+      }
+      .placeholder-note {
+        border: 1.5px dashed var(--kraft); border-radius: 8px;
+        padding: 14px 16px; font-size: 15px; color: var(--ink-soft);
+        background: var(--kraft-soft);
+      }
+      .placeholder-note b { color: var(--ink); }
+
+      /* ---------- Library ---------- */
+      .glossary { display: grid; grid-template-columns: 1fr 1fr; gap: 0 40px; }
+      .glossary div { padding: 14px 0; border-top: 1px solid var(--line); }
+      .glossary dt { font-family: Georgia, serif; font-size: 18px; font-weight: 600; }
+      .glossary dt .abbr { color: var(--kraft); }
+      .glossary dd { margin: 6px 0 0; color: var(--ink-soft); font-size: 15.5px; }
+
+      .check-item {
+        display: flex; gap: 16px; align-items: flex-start;
+        background: var(--surface); border: 1px solid var(--line); border-radius: 10px;
+        padding: 18px 20px; margin-top: 14px;
+      }
+      .check-item p { flex: 1; font-size: 16px; }
+      .check-item p b { display: block; font-size: 16.5px; margin-bottom: 2px; }
+      .check-item p span { color: var(--ink-soft); font-size: 15px; }
+      .yn { display: flex; gap: 8px; flex: none; }
+      .yn button {
+        border: 1px solid var(--line); background: var(--bg); color: var(--ink);
+        font-family: inherit; font-size: 14.5px; font-weight: 700;
+        padding: 8px 16px; border-radius: 6px; cursor: pointer;
+      }
+      .yn button[aria-pressed="true"] { background: var(--forest); color: var(--on-forest); border-color: var(--forest); }
+      .yn button.no[aria-pressed="true"] { background: var(--kraft); border-color: var(--kraft); color: #152635; }
+      .check-result {
+        margin-top: 22px; border-radius: 10px; padding: 22px 24px;
+        background: var(--forest-deep); color: var(--on-forest); display: none;
+      }
+      .check-result.show { display: block; }
+      .check-result h3 { font-size: 21px; margin-bottom: 8px; }
+      .check-result p { color: var(--on-forest-soft); font-size: 16px; }
+      .check-result .btn { margin-top: 16px; }
+
+      /* ---------- Contact ---------- */
+      .contact-band { background: linear-gradient(160deg, #17452c 0%, var(--forest-deep) 62%, #081f13 100%); color: var(--on-forest); }
+      .contact-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 44px; align-items: start; }
+      .contact-band h2 { font-size: clamp(27px, 3.4vw, 36px); }
+      .contact-band .intro { margin-top: 14px; color: var(--on-forest-soft); max-width: 32em; }
+      .contact-card {
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(238, 243, 248, 0.22);
+        border-radius: 10px; padding: 26px;
+      }
+      .contact-card dl { margin: 0; display: grid; gap: 18px; }
+      .contact-card dt {
+        font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase;
+        color: var(--on-forest-soft); margin-bottom: 3px;
+      }
+      .contact-card dd { margin: 0; font-size: 17.5px; }
+      .contact-card a { color: #f5a55c; text-decoration: none; font-weight: 600; }
+      .contact-card a:hover { text-decoration: none; }
+      .contact-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+
+      .audit-form { display: grid; gap: 16px; }
+      .audit-form label { display: block; font-weight: 600; font-size: 15.5px; }
+      .audit-form input, .audit-form select, .audit-form textarea {
+        width: 100%; margin-top: 6px;
+        padding: 11px 13px; border-radius: 6px;
+        border: 1px solid var(--line);
+        background: var(--surface); color: var(--ink);
+        font-family: inherit; font-size: 16px; font-weight: 400;
+      }
+      .form-note { font-size: 14px; color: var(--ink-soft); }
+      #work-with-us { scroll-margin-top: 84px; }
+
+      footer { padding: 30px 0 36px; font-size: 14px; color: var(--ink-soft); }
+      footer .wrap { display: flex; flex-wrap: wrap; gap: 10px 28px; justify-content: space-between; }
+      footer nav { display: flex; flex-wrap: wrap; gap: 4px 16px; }
+      footer nav a { color: var(--ink-soft); text-decoration: none; font-weight: 600; }
+      footer nav a:hover { color: var(--forest); text-decoration: none; }
+
+      /* ---------- Mobile menu toggle ---------- */
+      .nav-toggle {
+        display: none;
+        margin-left: auto; flex: none;
+        align-items: center; gap: 9px;
+        background: transparent; color: var(--on-forest);
+        border: 1px solid rgba(238, 243, 248, 0.45); border-radius: 6px;
+        padding: 9px 13px; cursor: pointer;
+        font-family: inherit; font-size: 14.5px; font-weight: 700;
+      }
+      .nav-toggle .bars { display: inline-flex; flex-direction: column; gap: 4px; }
+      .nav-toggle .bars i { display: block; width: 20px; height: 2px; background: var(--on-forest); border-radius: 1px; }
+
+      /* ---------- Responsive ---------- */
+      @media (max-width: 960px) {
+        /* Compact one-row header: brand + Menu button; nav opens as a panel below */
+        .nav-toggle { display: inline-flex; }
+        .site-header .wrap { flex-wrap: wrap; gap: 12px; }
+        .main-nav { display: none; order: 3; width: 100%; margin-left: 0; flex-direction: column; align-items: stretch; gap: 2px; padding: 8px 0 6px; }
+        .main-nav.open { display: flex; }
+        .main-nav a { padding: 12px; font-size: 16px; }
+        .header-cta { margin-left: 0; margin-top: 6px; text-align: center; }
+      }
+      @media (max-width: 860px) {
+        .hero-inner { grid-template-columns: 1fr; gap: 36px; padding-top: 44px; padding-bottom: 42px; }
+        .hero-photo img { aspect-ratio: 16 / 10; }
+        .tiles, .cards, .cards.two, .approach { grid-template-columns: 1fr; }
+        .two-col, .contact-grid { grid-template-columns: 1fr; gap: 32px; }
+        .glossary { grid-template-columns: 1fr; }
+        .check-item { flex-direction: column; }
+        section { padding: 46px 0; }
+      }
+      /* ---------- Portrait phones: type and spacing sized for a narrow screen ---------- */
+      @media (max-width: 640px) {
+        body { font-size: 16px; }
+        .wrap { padding: 0 18px; }
+        section { padding: 42px 0; }
+        .brand-logo { height: 36px; padding: 4px 8px; border-radius: 6px; }
+        .hero-inner { padding-top: 36px; padding-bottom: 36px; gap: 28px; }
+        .hero h1 { font-size: 31px; line-height: 1.18; }
+        .hero .lede { font-size: 16.5px; margin-top: 16px; }
+        .page-hero .wrap { padding-top: 34px; padding-bottom: 32px; }
+        .page-hero h1 { font-size: 28px; line-height: 1.2; }
+        .page-hero .lede { font-size: 16.5px; }
+        .section-head { margin-bottom: 26px; }
+        .section-head h2 { font-size: 25px; }
+        .section-head p { font-size: 16px; }
+        .two-col h2 { font-size: 24px; }
+        /* Full-width stacked buttons: easy thumb targets, nothing squeezed side by side */
+        .hero-actions, .contact-actions { flex-direction: column; align-items: stretch; }
+        .hero-actions .btn, .contact-actions .btn { text-align: center; }
+        .hero-meta { margin-top: 24px; gap: 6px 18px; font-size: 13.5px; }
+        .tile, .card, .report-card { padding: 22px 20px; }
+        .card-thumb { margin: -22px -20px 18px; }
+        .tile h3, .card h3 { font-size: 19px; }
+        .steps-ol li { padding-left: 50px; }
+        .prose p, .two-col .body { font-size: 16px; }
+        .yn button { padding: 10px 20px; }
+        .contact-card { padding: 22px 20px; }
+        footer .wrap { flex-direction: column; gap: 12px; }
+
+        /* Audit tier table becomes stacked cards, no sideways scrolling */
+        .tier-table-wrap { overflow-x: visible; border: none; background: transparent; box-shadow: none; }
+        table.tiers { min-width: 0; font-size: 15.5px; }
+        table.tiers thead { display: none; }
+        table.tiers, table.tiers tbody, table.tiers tr, table.tiers th, table.tiers td { display: block; width: auto; }
+        table.tiers tr {
+          background: var(--surface); border: 1px solid var(--line); border-radius: 10px;
+          box-shadow: var(--shadow); padding: 18px; margin-bottom: 14px;
+        }
+        table.tiers th, table.tiers td { border-top: none; padding: 0; }
+        table.tiers tbody th { font-family: Georgia, serif; font-size: 17.5px; margin-bottom: 8px; }
+        table.tiers td { margin-top: 12px; }
+        table.tiers td::before {
+          display: block; margin-bottom: 3px;
+          font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+          color: var(--kraft);
+        }
+        table.tiers td:nth-of-type(1)::before { content: "Diagnostic Audit"; }
+        table.tiers td:nth-of-type(2)::before { content: "Full Operations Audit"; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html { scroll-behavior: auto; }
+        .btn { transition: none; }
+      }
+    </style>
+      <script data-goatcounter="https://econovaglobal.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  </head>
+  <body>
+
+    <!-- ================= SITE HEADER ================= -->
+    <div class="site-header">
+      <div class="wrap">
+        <a class="brandmark" href="/" aria-label="Econova Global Solutions home page">
+          <img class="brand-logo" src="/assets/logo.webp" alt="Econova Global Solutions" width="2736" height="912" />
+        </a>
+        <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+          <span class="bars" aria-hidden="true"><i></i><i></i><i></i></span> Menu
+        </button>
+        <nav class="main-nav" id="main-nav" aria-label="Main">
+          <a href="/services/" data-nav="services">Services</a>
+          <a href="/how-we-work/" data-nav="how-we-work">How We Work</a>
+          <a href="/industries/" data-nav="industries" class="active">Industries</a>
+          <a href="/library/" data-nav="library">Library</a>
+          <a href="/about/" data-nav="about">About</a>
+          <a href="/contact/" data-nav="contact">Contact</a>
+          <a class="header-cta" href="/audit/">Start with a free audit</a>
+        </nav>
+      </div>
+    </div>
+
+    <main id="app">
+
+<div class="view active" data-view="industry-building">
+      <header class="page-hero">
+        <div class="wrap">
+          <p class="crumb" style="color:var(--on-forest-soft);"><a href="/industries/" style="color:#f5a55c;">Industries</a> · Building Products &amp; General Distribution</p>
+          <h1>Building Products &amp; <em>General Distribution</em></h1>
+          <p class="lede">Long, heavy, fragile and weather-exposed. Building products break the assumptions of a standard warehouse, and the delivery promise is a jobsite window, not a dock appointment.</p>
+          <figure class="page-banner">
+            <img src="/assets/stock-building-yard.webp" alt="A forklift loading wrapped building blocks onto a flatbed truck in an outdoor yard" width="1600" height="1115" loading="lazy" />
+          </figure>
+        </div>
+      </header>
+      <section>
+        <div class="wrap two-col">
+          <div class="prose">
+            <h3>The sector&rsquo;s pressures</h3>
+            <ul>
+              <li><b>Product reality:</b> oversize and heavy SKUs, cantilever and yard storage, damage that happens in handling rather than transit.</li>
+              <li><b>Mixed flow:</b> contractor counter pickups, scheduled jobsite deliveries and stock replenishment all compete for the same yard and fleet.</li>
+              <li><b>DSD discipline:</b> direct store delivery and branch replenishment run on fixed routes. Route-to-market design decides the cost.</li>
+              <li><b>Seasonality:</b> construction-season peaks against winter troughs stress staffing and space in opposite directions.</li>
+            </ul>
+            <h3>How Econova helps</h3>
+            <ul>
+              <li><a href="/audit/">Audits</a> covering yard and warehouse as one flow, receiving, put-away, picking for counter vs delivery, and dispatch.</li>
+              <li><a href="/service/design/">Layout, slotting and route-to-market design</a>, including DSD models and branch replenishment.</li>
+              <li><a href="/service/inventory/">Inventory control</a> for slow-moving, high-value lines where overstock hides, plus damage-focused <a href="/service/packaging/">packing and handling reviews</a>.</li>
+            </ul>
+          </div>
+          <div>
+            <div class="faq-list">
+              <details class="faq">
+                <summary>Does the audit include the yard?</summary>
+                <p>Yes, where yard storage or loading is part of the operation, the flow is audited as it runs, not as the building plan imagines it.</p>
+              </details>
+              <details class="faq">
+                <summary>Can you redesign contractor counter flow?</summary>
+                <p>Counter pickup is a process like any other: queue, pick, check, load. It is included in design and audit scope when it shares space or labour with distribution.</p>
+              </details>
+              <details class="faq">
+                <summary>Do you work with general distributors too?</summary>
+                <p>Yes. Wholesalers and general distributors with conventional pallet-and-case flow are core Econova clients; this page&rsquo;s specifics address the building-products end of that spectrum.</p>
+              </details>
+            </div>
+            <div class="contact-actions">
+              <a class="btn btn-dark" href="/contact/">Discuss your operation</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <span>© 2026 Econova Global Solutions · Vancouver, BC</span>
+        <span>Team: Associates in Canada (Vancouver · Ottawa), England (London), Germany (Düsseldorf), France (Paris), Spain (Madrid), the UAE (Dubai) and Iran.</span>
+        <nav aria-label="Footer">
+          <a href="/services/">Services</a>
+          <a href="/audit/">Audit</a>
+          <a href="/industries/">Industries</a>
+          <a href="/library/">Library</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/#work-with-us">Work with us</a>
+          <a href="/contact/">Contact</a>
+        </nav>
+        <span>Warehousing · Distribution · Last Mile · Packaging &amp; VAS</span>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+var navToggle = document.getElementById("nav-toggle");
+        var mainNav = document.getElementById("main-nav");
+        function closeMenu() {
+          if (mainNav) mainNav.classList.remove("open");
+          if (navToggle) navToggle.setAttribute("aria-expanded", "false");
+        }
+        if (navToggle && mainNav) {
+          navToggle.addEventListener("click", function () {
+            var open = mainNav.classList.toggle("open");
+            navToggle.setAttribute("aria-expanded", open ? "true" : "false");
+          });
+          mainNav.addEventListener("click", function (e) {
+            if (e.target.closest("a")) closeMenu();
+          });
+        }
+        /* ---- Readiness checklist ---- */
+        var answers = {};
+        var checklist = document.getElementById("checklist");
+        if (checklist) {
+          checklist.addEventListener("click", function (e) {
+            var btn = e.target.closest("button[data-q]");
+            if (!btn) return;
+            var q = btn.getAttribute("data-q");
+            answers[q] = btn.getAttribute("data-v");
+            var group = checklist.querySelectorAll("button[data-q='" + q + "']");
+            for (var i = 0; i < group.length; i++) {
+              group[i].setAttribute("aria-pressed", group[i] === btn ? "true" : "false");
+            }
+            updateResult();
+          });
+        }
+        function updateResult() {
+          var answered = Object.keys(answers).length;
+          var yes = 0;
+          for (var k in answers) { if (answers[k] === "yes") yes++; }
+          var box = document.getElementById("check-result");
+          if (!box || answered < 8) { if (box) box.classList.remove("show"); return; }
+          var title = document.getElementById("check-result-title");
+          var body = document.getElementById("check-result-body");
+          var cta = document.getElementById("check-result-cta");
+          if (yes >= 3) {
+            title.textContent = "You answered yes to " + yes + " of 8. An audit is likely to surface findings worth acting on.";
+            body.textContent = "That pattern, measured against a KPI baseline and written down, is exactly what the Warehouse Operations Audit produces: strengths, weaknesses, and the fixes in priority order. And if you proceed to implementation with us, the audit fee is credited toward the work.";
+            cta.textContent = "See how the audit works";
+            cta.setAttribute("href", "/audit/");
+          } else if (yes >= 1) {
+            title.textContent = "You answered yes to " + yes + " of 8. A focused look is worthwhile.";
+            body.textContent = "Below the three-yes threshold the full audit may be more than you need, but the item(s) you flagged are worth a Diagnostic Audit or a single-issue review before they grow. The audit page compares the two tiers.";
+            cta.textContent = "Compare the audit tiers";
+            cta.setAttribute("href", "/audit/");
+          } else {
+            title.textContent = "No yes answers. Your operation is in good shape.";
+            body.textContent = "Keep the discipline: baselines drift as volumes and channels change. The monitoring retainer exists for exactly this, keeping a healthy operation measured, with periodic re-audits.";
+            cta.textContent = "See performance monitoring";
+            cta.setAttribute("href", "/service/monitoring/");
+          }
+          box.classList.add("show");
+        }
+
+        
+        /* ---- Forms -> Web3Forms (real submission to the Econova inbox) ---- */
+        function wireForm(formId, subject, fields, successMsg) {
+          var form = document.getElementById(formId);
+          if (!form) return;
+          form.addEventListener("submit", function (e) {
+            e.preventDefault();
+            var status = form.querySelector(".form-status");
+            function v(id) { var el = document.getElementById(id); return el ? el.value.trim() : ""; }
+            var payload = { access_key: "219ef0ac-860a-4419-acd9-6fb95fc26115", subject: subject, from_name: "Econova website", botcheck: "" };
+            var missing = false;
+            fields.forEach(function (f) {
+              var val = v(f[0]);
+              if (f[2] && !val) missing = true;
+              if (val) payload[f[1]] = val;
+            });
+            if (missing) {
+              if (status) status.textContent = "Please add your name and email so we can reply.";
+              return;
+            }
+            if (status) status.textContent = "Sending…";
+            fetch("https://api.web3forms.com/submit", {
+              method: "POST",
+              headers: { "Content-Type": "application/json", "Accept": "application/json" },
+              body: JSON.stringify(payload)
+            }).then(function (r) { return r.json(); }).then(function (data) {
+              if (data && data.success) {
+                form.reset();
+                if (status) status.textContent = successMsg;
+              } else {
+                if (status) status.textContent = "Something went wrong sending that. Please email info@econovaglobal.ca directly.";
+              }
+            }).catch(function () {
+              if (status) status.textContent = "Something went wrong sending that. Please email info@econovaglobal.ca directly.";
+            });
+          });
+        }
+        wireForm("audit-form", "Free audit request: Econova Global Solutions", [
+          ["f-name", "Name", true], ["f-email", "Email", true], ["f-company", "Company", false],
+          ["f-size", "Facility size (sq ft)", false], ["f-sector", "Sector", false], ["f-pain", "Main pain point", false]
+        ], "Thank you — your request is in our inbox and we will reply by email.");
+        (function () {
+          var wf = document.getElementById("work-form");
+          if (!wf) return;
+          var orig = wf.querySelector(".form-status");
+          wf.addEventListener("submit", function () {
+            var ri = document.getElementById("w-resume");
+            if (ri && ri.files && ri.files.length) {
+              var note = document.createElement("input");
+              note.type = "hidden"; note.name = "Resume file name"; note.value = ri.files[0].name;
+              wf.appendChild(note);
+            }
+          }, true);
+        })();
+        wireForm("work-form", "Work with us: Econova Global Solutions", [
+          ["w-name", "Name", true], ["w-email", "Email", true], ["w-phone", "Phone", false],
+          ["w-field", "Field of expertise", false], ["w-region", "Region or city", false], ["w-background", "Background", false]
+        ], "Thank you — your details are in our inbox and we will reply by email.");
+      })();
+    </script>
+  </body>
+</html>

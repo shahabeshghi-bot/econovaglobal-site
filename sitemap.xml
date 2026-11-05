@@ -1,9 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://econovaglobal.ca/</loc>
-    <lastmod>2026-11-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
+  <url><loc>https://econovaglobal.ca/</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://econovaglobal.ca/services/</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://econovaglobal.ca/audit/</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://econovaglobal.ca/service/wms/</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://econovaglobal.ca/service/design/</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://econovaglobal.ca/service/packaging/</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://econovaglobal.ca/service/inventory/</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://econovaglobal.ca/service/monitoring/</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://econovaglobal.ca/how-we-work/</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://econovaglobal.ca/industries/</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://econovaglobal.ca/industry/food-beverage/</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://econovaglobal.ca/industry/ecommerce/</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://econovaglobal.ca/industry/3pl/</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://econovaglobal.ca/industry/building-products/</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://econovaglobal.ca/stories/</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://econovaglobal.ca/library/</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://econovaglobal.ca/library/checklist/</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://econovaglobal.ca/library/kpi-glossary/</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://econovaglobal.ca/library/wms-guide/</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://econovaglobal.ca/about/</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://econovaglobal.ca/faq/</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://econovaglobal.ca/contact/</loc><lastmod>2026-11-05</lastmod></url>
 </urlset>
