@@ -611,9 +611,13 @@
         html { scroll-behavior: auto; }
         .btn { transition: none; }
       }
-    </style>
+    
+.sticky-cta{display:none}
+@media (max-width:820px){.sticky-cta{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:90;box-shadow:0 -2px 14px rgba(0,0,0,.2)}.sticky-cta a{flex:1;text-align:center;padding:14px 8px;font-weight:700;font-size:15px;text-decoration:none}.sticky-cta .cta-call{background:#14342B;color:#fff}.sticky-cta .cta-audit{background:#C96A1E;color:#fff}body{padding-bottom:54px}}
+</style>
       <script data-goatcounter="https://econovaglobal.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-  </head>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does the audit include the yard?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, where yard storage or loading is part of the operation, the flow is audited as it runs, not as the building plan imagines it."}}, {"@type": "Question", "name": "Can you redesign contractor counter flow?", "acceptedAnswer": {"@type": "Answer", "text": "Counter pickup is a process like any other: queue, pick, check, load. It is included in design and audit scope when it shares space or labour with distribution."}}, {"@type": "Question", "name": "Do you work with general distributors too?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Wholesalers and general distributors with conventional pallet-and-case flow are core Econova clients; this page’s specifics address the building-products end of that spectrum."}}]}</script>
+</head>
   <body>
 
     <!-- ================= SITE HEADER ================= -->
@@ -830,5 +834,10 @@ var navToggle = document.getElementById("nav-toggle");
         ], "Thank you — your details are in our inbox and we will reply by email.");
       })();
     </script>
-  </body>
+  <div class="sticky-cta"><a class="cta-call" href="tel:+12369913727">Call Econova</a><a class="cta-audit" href="/audit/">Free audit</a></div>
+<script>
+document.addEventListener('click',function(e){var a=(e.target&&e.target.closest)?e.target.closest('a[href^="tel:"],a[href^="mailto:"]'):null;if(a&&window.goatcounter){window.goatcounter.count({path:'click-'+(a.getAttribute('href').indexOf('tel:')===0?'phone':'email'),title:'Contact click',event:true});}});
+document.querySelectorAll('form').forEach(function(f){f.addEventListener('submit',function(){if(window.goatcounter){window.goatcounter.count({path:'form-submit-'+f.id,title:'Form submit',event:true});}});});
+</script>
+</body>
 </html>

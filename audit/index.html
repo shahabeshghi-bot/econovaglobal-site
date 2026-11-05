@@ -611,9 +611,13 @@
         html { scroll-behavior: auto; }
         .btn { transition: none; }
       }
-    </style>
+    
+.sticky-cta{display:none}
+@media (max-width:820px){.sticky-cta{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:90;box-shadow:0 -2px 14px rgba(0,0,0,.2)}.sticky-cta a{flex:1;text-align:center;padding:14px 8px;font-weight:700;font-size:15px;text-decoration:none}.sticky-cta .cta-call{background:#14342B;color:#fff}.sticky-cta .cta-audit{background:#C96A1E;color:#fff}body{padding-bottom:54px}}
+</style>
       <script data-goatcounter="https://econovaglobal.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-  </head>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is a warehouse operations audit?", "acceptedAnswer": {"@type": "Answer", "text": "A fixed-scope, independent review of how your warehouse or distribution centre actually runs, receiving through dispatch, inventory through last mile, measured against the KPIs the industry runs on, and delivered as a complete written report covering strengths and weaknesses."}}, {"@type": "Question", "name": "Why does it matter?", "acceptedAnswer": {"@type": "Answer", "text": "Warehouses drift. Volumes, SKU profiles and channels change, but slotting, replenishment parameters and staffing patterns stay where they were set. The audit finds where throughput, service level and cost have quietly diverged from what the operation was designed for, and prices the fixes in priority order before you spend on the wrong one."}}, {"@type": "Question", "name": "What types of audit are there?", "acceptedAnswer": {"@type": "Answer", "text": "We begin with a free audit of your operation, no obligation, the entry step. After that, two paid tiers: a focused Diagnostic Audit, a health check of the core warehouse flow with headline KPIs, and a Full Operations Audit, which adds inventory and replenishment systems, distribution channels, last mile, reverse logistics and cold chain, with a full KPI baseline and a roadmap with estimated impact. See the comparison table above."}}, {"@type": "Question", "name": "What does the audit examine?", "acceptedAnswer": {"@type": "Answer", "text": "Inbound receiving and dock-to-stock time; put-away and slotting; picking and packing; outbound dispatch and last mile handover; inventory accuracy, reorder point (ROP), safety stock and cycle counting; labour and per-unit efficiency; layout and material flow; systems and WMS functionality; and the end-of-line packaging operation."}}, {"@type": "Question", "name": "What do we receive at the end?", "acceptedAnswer": {"@type": "Answer", "text": "A complete written report: your KPI baseline, strengths and weaknesses process by process, what each weakness is costing you, and the fixes in priority order, quick wins first, then structural changes with estimated impact. The report is yours to act on with your in-house team, or to implement with us, in which case the audit fee is credited toward the implementation."}}]}</script>
+</head>
   <body>
 
     <!-- ================= SITE HEADER ================= -->
@@ -951,5 +955,10 @@ var navToggle = document.getElementById("nav-toggle");
         ], "Thank you — your details are in our inbox and we will reply by email.");
       })();
     </script>
-  </body>
+  <div class="sticky-cta"><a class="cta-call" href="tel:+12369913727">Call Econova</a><a class="cta-audit" href="/audit/">Free audit</a></div>
+<script>
+document.addEventListener('click',function(e){var a=(e.target&&e.target.closest)?e.target.closest('a[href^="tel:"],a[href^="mailto:"]'):null;if(a&&window.goatcounter){window.goatcounter.count({path:'click-'+(a.getAttribute('href').indexOf('tel:')===0?'phone':'email'),title:'Contact click',event:true});}});
+document.querySelectorAll('form').forEach(function(f){f.addEventListener('submit',function(){if(window.goatcounter){window.goatcounter.count({path:'form-submit-'+f.id,title:'Form submit',event:true});}});});
+</script>
+</body>
 </html>

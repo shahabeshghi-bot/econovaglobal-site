@@ -611,9 +611,13 @@
         html { scroll-behavior: auto; }
         .btn { transition: none; }
       }
-    </style>
+    
+.sticky-cta{display:none}
+@media (max-width:820px){.sticky-cta{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:90;box-shadow:0 -2px 14px rgba(0,0,0,.2)}.sticky-cta a{flex:1;text-align:center;padding:14px 8px;font-weight:700;font-size:15px;text-decoration:none}.sticky-cta .cta-call{background:#14342B;color:#fff}.sticky-cta .cta-audit{background:#C96A1E;color:#fff}body{padding-bottom:54px}}
+</style>
       <script data-goatcounter="https://econovaglobal.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-  </head>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How does an engagement start?", "acceptedAnswer": {"@type": "Answer", "text": "With a free audit of your operation, no obligation, then, if you want to go further, the full operations audit : a fixed-scope review that produces the written report and KPI baseline every later decision is measured against. If you proceed to implementation with us, the audit fee is credited toward that work."}}, {"@type": "Question", "name": "Can we buy just one layer?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The audit report stands on its own, design work can be implemented by your in-house team, and monitoring can be built on a baseline you already trust. The layers connect, but none is a hostage to the others."}}, {"@type": "Question", "name": "Do you work with our existing vendors and 3PLs?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, and independently. We sell no software, equipment or materials, so our recommendations and audits carry no vendor interest."}}, {"@type": "Question", "name": "Where do you work?", "acceptedAnswer": {"@type": "Answer", "text": "Econova is led from Vancouver, BC, with an associate network in Canada, England, Germany, France, Spain, the UAE and Iran, and a delivery record across the Middle East, Central Asia and Europe. In Canada the emphasis is consulting and audit, with implementation support from the wider team."}}]}</script>
+</head>
   <body>
 
     <!-- ================= SITE HEADER ================= -->
@@ -842,5 +846,10 @@ var navToggle = document.getElementById("nav-toggle");
         ], "Thank you — your details are in our inbox and we will reply by email.");
       })();
     </script>
-  </body>
+  <div class="sticky-cta"><a class="cta-call" href="tel:+12369913727">Call Econova</a><a class="cta-audit" href="/audit/">Free audit</a></div>
+<script>
+document.addEventListener('click',function(e){var a=(e.target&&e.target.closest)?e.target.closest('a[href^="tel:"],a[href^="mailto:"]'):null;if(a&&window.goatcounter){window.goatcounter.count({path:'click-'+(a.getAttribute('href').indexOf('tel:')===0?'phone':'email'),title:'Contact click',event:true});}});
+document.querySelectorAll('form').forEach(function(f){f.addEventListener('submit',function(){if(window.goatcounter){window.goatcounter.count({path:'form-submit-'+f.id,title:'Form submit',event:true});}});});
+</script>
+</body>
 </html>

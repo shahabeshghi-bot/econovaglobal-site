@@ -611,9 +611,13 @@
         html { scroll-behavior: auto; }
         .btn { transition: none; }
       }
-    </style>
+    
+.sticky-cta{display:none}
+@media (max-width:820px){.sticky-cta{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:90;box-shadow:0 -2px 14px rgba(0,0,0,.2)}.sticky-cta a{flex:1;text-align:center;padding:14px 8px;font-weight:700;font-size:15px;text-decoration:none}.sticky-cta .cta-call{background:#14342B;color:#fff}.sticky-cta .cta-audit{background:#C96A1E;color:#fff}body{padding-bottom:54px}}
+</style>
       <script data-goatcounter="https://econovaglobal.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-  </head>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Our audit findings are peak-specific. Can you audit at peak?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, and it is often the most honest time to look. Scope and timing are set in the audit agreement; data analysis covers the rest of the year so the baseline isn’t only a peak picture."}}, {"@type": "Question", "name": "Do you work with brands that fulfil in-house?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. E-commerce and D2C brands running their own fulfilment are a core audience, alongside operations weighing a move to a 3PL."}}, {"@type": "Question", "name": "Can you set up a returns process?", "acceptedAnswer": {"@type": "Answer", "text": "Reverse logistics design is part of network and process design work, covering intake, grading, restock and disposition rules."}}]}</script>
+</head>
   <body>
 
     <!-- ================= SITE HEADER ================= -->
@@ -832,5 +836,10 @@ var navToggle = document.getElementById("nav-toggle");
         ], "Thank you — your details are in our inbox and we will reply by email.");
       })();
     </script>
-  </body>
+  <div class="sticky-cta"><a class="cta-call" href="tel:+12369913727">Call Econova</a><a class="cta-audit" href="/audit/">Free audit</a></div>
+<script>
+document.addEventListener('click',function(e){var a=(e.target&&e.target.closest)?e.target.closest('a[href^="tel:"],a[href^="mailto:"]'):null;if(a&&window.goatcounter){window.goatcounter.count({path:'click-'+(a.getAttribute('href').indexOf('tel:')===0?'phone':'email'),title:'Contact click',event:true});}});
+document.querySelectorAll('form').forEach(function(f){f.addEventListener('submit',function(){if(window.goatcounter){window.goatcounter.count({path:'form-submit-'+f.id,title:'Form submit',event:true});}});});
+</script>
+</body>
 </html>
