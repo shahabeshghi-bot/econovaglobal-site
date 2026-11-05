@@ -695,7 +695,57 @@
             <a class="btn btn-primary" href="/audit/" id="check-result-cta">See how the audit works</a>
           </div>
           <p class="form-note" style="margin-top:18px;">This checklist runs entirely on this page. Your answers are not sent or stored anywhere.</p>
-          <p style="margin-top:16px;"><a class="btn" href="/assets/econova-warehouse-self-check.pdf" download>Download this checklist as a PDF</a></p>
+          <div style="margin-top:26px;border:1.5px solid var(--line);border-radius:10px;padding:20px;background:var(--surface);">
+            <h3 style="margin:0 0 6px;">Get this checklist as a one page PDF</h3>
+            <p style="margin:0 0 14px;color:var(--ink-soft);">The same checks in a printable sheet for the warehouse floor, plus the four areas in order. Tell us where to send it and the download starts right away.</p>
+            <form class="audit-form" id="gate-form">
+              <label>Your name
+                <input type="text" id="g-name" autocomplete="name" />
+              </label>
+              <label>Email
+                <input type="email" id="g-email" autocomplete="email" />
+              </label>
+              <button class="btn btn-primary" type="submit">Send me the checklist</button>
+              <p class="form-status" role="status"></p>
+            </form>
+          </div>
+          <script>
+          (function () {
+            var form = document.getElementById("gate-form");
+            if (!form) return;
+            var status = form.querySelector(".form-status");
+            form.addEventListener("submit", function (e) {
+              e.preventDefault();
+              var name = document.getElementById("g-name").value.trim();
+              var email = document.getElementById("g-email").value.trim();
+              if (!name || !email) { status.textContent = "Please add your name and email so we can send it."; return; }
+              status.textContent = "Sending...";
+              fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                headers: { "Content-Type": "application/json", "Accept": "application/json" },
+                body: JSON.stringify({
+                  access_key: "219ef0ac-860a-4419-acd9-6fb95fc26115",
+                  subject: "Checklist download: Econova Global Solutions",
+                  from_name: "Econova website",
+                  Name: name, Email: email, Source: "Warehouse self check PDF, checklist page"
+                })
+              }).then(function (r) { return r.json(); }).then(function (data) {
+                if (data && data.success) {
+                  status.textContent = "Thank you. Your checklist is downloading now.";
+                  var a = document.createElement("a");
+                  a.href = "/assets/econova-warehouse-self-check.pdf";
+                  a.setAttribute("download", "");
+                  document.body.appendChild(a); a.click(); a.remove();
+                  form.reset();
+                } else {
+                  status.textContent = "Something went wrong sending that. Please email info@econovaglobal.ca directly.";
+                }
+              }).catch(function () {
+                status.textContent = "Something went wrong sending that. Please email info@econovaglobal.ca directly.";
+              });
+            });
+          })();
+          </script>
         </div>
       </section>
     </div>
